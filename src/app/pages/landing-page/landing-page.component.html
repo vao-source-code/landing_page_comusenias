@@ -1,0 +1,92 @@
+<div class="d-flex flex-direction-column flex-wrap align-items-center justify-content-around bg-violeta">
+        <div class="contenido mt-4 mt-xl-0">
+            <div class="marco">
+            </div>
+            <div class="info bg-white pt-4 pb-5 px-4">
+                <h1 class="slogan">El mundo en tus manos.</h1>
+                <p>La app revolucionaria que acerca la lengua de señas a la nueva generación.</p>
+                <div class="descarga">
+                    <h3 class="fw-semibold">Descarga la App</h3>
+                    <img src="assets/playstore.svg" alt="logo google play store">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <img src="assets/deviceAndroidFS.svg" alt="pantalla juego">
+        </div>
+</div>
+
+<div id="nuestraApp" class="nuestraApp px-2 px-md-5 py-5">
+    <h1 class="titulo text-uppercase text-center mb-4">Nuestra App</h1>
+    <div class="d-flex flex-wrap-reverse">
+        <div class="col-12 col-lg-6 d-flex justify-content-center mt-5 mt-md-0">
+            <img height="80%" src="assets/progress.svg" alt="pantalla splash">
+        </div>
+        <div class="col-12 col-lg-5">
+            <p class="my-2">Es una plataforma educativa y de comunicación diseñada para enseñar y facilitar la lengua de señas. 
+                Destaca por su diseño creativo y accesible, ofreciendo a los usuarios una experiencia visual atractiva y funcional.
+            </p>
+            <div class="card mt-5" *ngFor="let item of cards">
+                <div class="card-body d-flex align-items-start gap-2">
+                    <img src="{{item.icon}}" alt="icono-check"> 
+                    <div>
+                        <h5 class="card-title">{{item.title}} </h5>
+                        <p class="card-text">{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="funciones" class="funciones text-center py-5 bg-violeta">
+    <h1 class="text-white text-uppercase fw-bold">Funciones</h1>
+    <h4 class="mt-5">Reconocimiento de Señas <br> por Cámara</h4>
+    <div class="cols row mx-0 mt-5">
+        <div class="col-12 col-lg-4 d-flex gap-4 flex-column justify-content-around align-items-center">
+            <h4>Asistencia de <br> un profesional</h4>
+            <h4>Notificaciones y recordatorios</h4>
+        </div>
+        <div class="col-12 col-lg-4 my-4">
+            <img src="assets/pacientes.svg" alt="pantalla especialista">
+        </div>
+        <div class="col-12 col-lg-4 d-flex gap-4 flex-column justify-content-around align-items-center">
+            <h4>Ejercicios <br> interactivos</h4>
+            <h4>HIstorial de <br> aprendizaje</h4>
+        </div>
+    </div>
+    <h4 class="mt-5">Actualizaciones<br>de contenido</h4>
+</div>
+
+<div id="descarga" class="descarga container py-4">
+    <h1 class="text-uppercase text-center">Descarga la Aplicacion</h1>
+    <p>Descarga nuestra aplicación Comuseñas y descubre cómo puedes aprender y comunicarte en lengua de señas de manera efectiva. Juntos, podemos construir un mundo donde la inclusión es una realidad para todos. 
+      ¡Descarga la aplicación hoy mismo y forma parte de nuestro movimiento hacia un futuro más inclusivo!</p>
+      <div class="text-center">
+        <img src="assets/playstore.svg" alt="logo google play store">
+      </div>
+</div>
+
+<div id="nuestroEquipo" class="nuestroEquipo bg-violeta py-5">
+    <h1 class="text-uppercase fw-bold text-center">Nuestro Equipo</h1>
+    <div class="d-flex justify-content-center flex-wrap px-2 p-md-5 mt-5 gap-5">
+        <div class="card col-12 col-md-5 col-lg-3 py-4" *ngFor="let participante of equipo">
+            <img src="{{participante.img}}" class="img-equipo" alt="imagen participante">
+            <div class="card-body text-center">
+                <div class="my-5">
+                    <h5 class="card-title nombres">{{participante.nombre}}</h5>
+                    <h5 class="card-title profesion">{{participante.profesion}}</h5>
+                </div>
+                <p class="card-text">{{participante.rol}}</p>
+                <div class="redes d-flex justify-content-center mt-5">
+                    <a href="{{participante.linkedin}}" target="_blank">
+                        <img src="assets/redes/linkedIn.svg" alt="icon-linkedIn">
+                    </a>
+                    <a href="{{participante.github}}" target="_blank">
+                        <img src="assets/redes/github.svg" alt="icon-github">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<footer id="contacto" class="bg-dark text-white">
+    <div class=" d-flex justify-content-between flex-wrap gap-5">
+        <div>
+            <p class="fw-bold violeta">Comuseñas</p>
+            <p>Seguinos en nuestras redes.</p>
+            <div class="redes d-flex justify-content-center">
+                <a href="" target="_blank">
+                    <img src="assets/footer/facebook.svg" alt="icon-facebook">
+                </a>
+                <a href="https://www.instagram.com/comusenias/" target="_blank">
+                    <img src="assets/footer/instagram.svg" alt="icon-instagram">
+                </a>
+                <a href="" target="_blank">
+                    <img src="assets/footer/twitter.svg" alt="icon-twitter">
+                </a>
+                <a href="" target="_blank">
+                    <img src="assets/footer/youtube.svg" alt="icon-youtube">
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-uppercase">Noticias</h3>
+            <p>Suscríbete a nuestro boletín para recibir nuestras últimas
+               novedades.</p>
+            <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="position-relative">
+                    <input class="w-100 px-4 rounded"  formControlName="email" type="email" placeholder="correo electrónico">
+                    <button class="btn btn-violeta" type="submit">
+                        <img src="assets/footer/send-plane.svg" alt="icono-enviar">
+                    </button>
+                </div>
+                <div *ngIf="contactForm.get('email')!.hasError('email')">
+                    Ingresa un correo electrónico válido.
+                </div>
+                <div *ngIf="showMessage">{{ message }}</div>
+            </form>
+        </div>
+    </div>
+</footer>

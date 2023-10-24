@@ -1,0 +1,25 @@
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: bold;
+    color: #232233;
+    text-transform: uppercase;
+}
+
+.navbar-toggler:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+@media (max-width:346px) {
+    .logo-completo{
+        display: none;
+    }
+
+    .logo-icono{
+        display: block!important;
+    }
+}

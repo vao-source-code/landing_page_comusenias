@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-completo" href="#"><img src="assets/logo.svg" alt="logo con nombre"></a>
+      <a class="navbar-brand logo-icono d-none" href="#"><img src="assets/lenguaje-de-senas.svg" alt="logo simple"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item" *ngFor="let item of sidebarItems">
+            <a class="nav-link active" aria-current="page" href="{{item.url}}">{{item.label}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>

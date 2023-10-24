@@ -1,0 +1,46 @@
+footer{
+    padding:15rem 8rem 4rem 8rem;
+}
+
+@media(max-width:1054px){
+    footer{
+        padding:15rem 1rem 4rem 1rem;
+    }
+}
+
+.violeta{
+    color: #7584F2;
+}
+
+.redes a{
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #6C6C72;
+}
+
+.redes a img{
+    margin: 0 1.5rem;
+}
+
+.redes a:first-child img{
+    margin-left: 0rem;
+}
+
+.redes a:last-child{
+    border: none;
+}
+
+.btn-violeta{
+    background-color: #7584F2;
+}
+
+form input{
+    height: 50px;
+    outline: none!important;
+}
+
+button{
+    position: absolute;
+    right: 0.3rem;
+    top:0.35rem;
+}

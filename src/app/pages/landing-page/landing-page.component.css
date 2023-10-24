@@ -1,0 +1,119 @@
+.bg-violeta{
+    background-color: #7584F2;
+}
+
+.contenido{
+    position: relative;
+    width: 620px;
+    height: 535px;
+}
+
+.marco{
+    border:solid 18px;
+    border-color: #7572FF;
+    height: 455px;
+    margin-left: 2rem;
+}
+
+.info{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+.info p{
+    font-size: 18px;
+    color: #000;
+}
+
+
+.slogan{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #7584F2;
+    font-weight: bold;
+}
+
+.descarga h3{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.nuestraApp h1,.descarga h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #232233;
+}
+
+.nuestroEquipo h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nuestraApp p{
+    font-size: 18px;
+    color:#6C6C72;
+}
+
+.nuestraApp .card-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #232233;
+}
+
+.funciones h1{
+    font-size: 50px;
+}
+
+.funciones h4{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.descarga p{
+    font-size: 18px;
+    color: #6C6C72;
+}
+
+.img-equipo{
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+.card-title.nombres{
+    font-size: 30px!important;
+    font-weight: bold!important;
+    text-transform: uppercase!important;
+    color: #232233!important;
+}
+
+.card-title.profesion{
+    font-size: 20px!important;
+    font-weight: 500!important;
+    text-transform: uppercase!important;
+    color: #6C6C72!important;
+}
+
+.redes a{
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #6C6C72;
+}
+
+.redes a img{
+    margin: 0 1.5rem;
+}
+
+.redes a:last-child{
+    border: none;
+}
+
+@media (max-width:450px) {
+    h1{
+        font-size: 35px!important;
+    }
+}
