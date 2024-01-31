@@ -117,3 +117,12 @@
         font-size: 35px!important;
     }
 }
+
+@media (max-width:347px){
+    .contenido{
+        height:515px;
+    }
+    .marco{
+        display: none;
+    }
+}
