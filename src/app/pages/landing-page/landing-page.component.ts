@@ -51,14 +51,6 @@ export class LandingPageComponent implements OnInit {
       github:'https://github.com/juanmatiasg'
     },
     {
-      img:'assets/fernando.svg',
-      nombre:'Fernando Benitez',
-      profesion:'Mobile Developer',
-      rol:'Product Manager',
-      linkedin:'https://www.linkedin.com/in/fernando-benitez-151287193/',
-      github:'https://github.com/ferseba18'
-    },
-    {
       img:'assets/fabian.svg',
       nombre:'Fabian Zarate',
       profesion:'Mobile Developer',
