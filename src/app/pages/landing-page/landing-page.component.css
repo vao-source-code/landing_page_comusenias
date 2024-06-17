@@ -85,7 +85,7 @@
 }
 
 .card-title.nombres{
-    font-size: 30px!important;
+    font-size: 28px!important;
     font-weight: bold!important;
     text-transform: uppercase!important;
     color: #232233!important;
@@ -115,5 +115,14 @@
 @media (max-width:450px) {
     h1{
         font-size: 35px!important;
+    }
+}
+
+@media (max-width:347px){
+    .contenido{
+        height:515px;
+    }
+    .marco{
+        display: none;
     }
 }
